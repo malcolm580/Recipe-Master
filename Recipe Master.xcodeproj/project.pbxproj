@@ -7,14 +7,178 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5D0F7F2259DF5B000572B6 /* detailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5D0F7E2259DF5B000572B6 /* detailTableViewCell.swift */; };
+		0F5D0FD0225A384C000572B6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */; };
+		0F5D0FD1225A384C000572B6 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F5D0FD8225A3CEE000572B6 /* japan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D0FD7225A3CEE000572B6 /* japan1.json */; };
+		0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3504D225CEC96001A9AD8 /* PageViewController.swift */; };
+		0FB35058225CF3FF001A9AD8 /* BookSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */; };
+		0FBB73692259002B002C9D72 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB73472259002A002C9D72 /* FileManager.swift */; };
+		0FBB736A2259002B002C9D72 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB734A2259002B002C9D72 /* CollectionCell.swift */; };
+		0FBB736B2259002B002C9D72 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB734B2259002B002C9D72 /* CollectionCell.xib */; };
+		0FBB736C2259002B002C9D72 /* Boots7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB734E2259002B002C9D72 /* Boots7.jpeg */; };
+		0FBB736D2259002B002C9D72 /* Boots6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB734F2259002B002C9D72 /* Boots6.jpeg */; };
+		0FBB736E2259002B002C9D72 /* Boots1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73502259002B002C9D72 /* Boots1.jpeg */; };
+		0FBB736F2259002B002C9D72 /* Boots3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73512259002B002C9D72 /* Boots3.jpeg */; };
+		0FBB73702259002B002C9D72 /* Boots2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73522259002B002C9D72 /* Boots2.jpeg */; };
+		0FBB73712259002B002C9D72 /* Boots5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73532259002B002C9D72 /* Boots5.jpeg */; };
+		0FBB73722259002B002C9D72 /* Boots4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73542259002B002C9D72 /* Boots4.jpeg */; };
+		0FBB73732259002B002C9D72 /* Hoodie5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73562259002B002C9D72 /* Hoodie5.jpeg */; };
+		0FBB73742259002B002C9D72 /* Hoodie4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73572259002B002C9D72 /* Hoodie4.jpeg */; };
+		0FBB73752259002B002C9D72 /* Hoodie3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73582259002B002C9D72 /* Hoodie3.jpeg */; };
+		0FBB73762259002B002C9D72 /* Hoodie2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73592259002B002C9D72 /* Hoodie2.jpeg */; };
+		0FBB73772259002B002C9D72 /* Hoodie1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB735A2259002B002C9D72 /* Hoodie1.jpeg */; };
+		0FBB73782259002B002C9D72 /* Hoodie6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB735B2259002B002C9D72 /* Hoodie6.jpeg */; };
+		0FBB73792259002B002C9D72 /* Gloves1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB735D2259002B002C9D72 /* Gloves1.jpeg */; };
+		0FBB737A2259002B002C9D72 /* Gloves6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB735E2259002B002C9D72 /* Gloves6.jpeg */; };
+		0FBB737B2259002B002C9D72 /* Gloves4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB735F2259002B002C9D72 /* Gloves4.jpeg */; };
+		0FBB737C2259002B002C9D72 /* Gloves5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73602259002B002C9D72 /* Gloves5.jpeg */; };
+		0FBB737D2259002B002C9D72 /* Gloves2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73612259002B002C9D72 /* Gloves2.jpeg */; };
+		0FBB737E2259002B002C9D72 /* Gloves3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73622259002B002C9D72 /* Gloves3.jpeg */; };
+		0FBB737F2259002B002C9D72 /* Bindings1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73642259002B002C9D72 /* Bindings1.jpeg */; };
+		0FBB73802259002B002C9D72 /* Bindings5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73652259002B002C9D72 /* Bindings5.jpeg */; };
+		0FBB73812259002B002C9D72 /* Bindings4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73662259002B002C9D72 /* Bindings4.jpeg */; };
+		0FBB73822259002B002C9D72 /* Bindings3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73672259002B002C9D72 /* Bindings3.jpeg */; };
+		0FBB73832259002B002C9D72 /* Bindings2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB73682259002B002C9D72 /* Bindings2.jpeg */; };
+		0FBB7385225900BD002C9D72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB7384225900BD002C9D72 /* DetailViewController.swift */; };
 		0FECCF302258FC9900E1026D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECCF2F2258FC9900E1026D /* AppDelegate.swift */; };
 		0FECCF322258FC9900E1026D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECCF312258FC9900E1026D /* ViewController.swift */; };
 		0FECCF352258FC9900E1026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF332258FC9900E1026D /* Main.storyboard */; };
 		0FECCF372258FC9A00E1026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF362258FC9A00E1026D /* Assets.xcassets */; };
 		0FECCF3A2258FC9A00E1026D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF382258FC9A00E1026D /* LaunchScreen.storyboard */; };
+		0FECCF602258FEAE00E1026D /* GlidingCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */; };
+		0FECCF612258FEAE00E1026D /* GlidingCollection.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0F5D0FC2225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		0F5D0FC4225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		0F5D0FC6225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS";
+		};
+		0F5D0FC8225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS Tests";
+		};
+		0F5D0FCA225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		0F5D0FCC225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		0F5D0FCE225A3832000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+		0F5D0FD2225A384C000572B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		0FECCF5C2258FE9900E1026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D56EE9F1E6B2D5E008C3698;
+			remoteInfo = GlidingCollection;
+		};
+		0FECCF5E2258FE9900E1026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D56EEAE1E6B2D82008C3698;
+			remoteInfo = GlidingCollectionDemo;
+		};
+		0FECCF622258FEAE00E1026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D56EE9E1E6B2D5E008C3698;
+			remoteInfo = GlidingCollection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0FECCF542258FDA500E1026D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0F5D0FD1225A384C000572B6 /* SwiftyJSON.framework in Copy Frameworks */,
+				0FECCF612258FEAE00E1026D /* GlidingCollection.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0F5D0F7E2259DF5B000572B6 /* detailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailTableViewCell.swift; sourceTree = "<group>"; };
+		0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		0F5D0FD7225A3CEE000572B6 /* japan1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = japan1.json; sourceTree = "<group>"; };
+		0FB3504D225CEC96001A9AD8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSubViewController.swift; sourceTree = "<group>"; };
+		0FBB73472259002A002C9D72 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		0FBB734A2259002B002C9D72 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		0FBB734B2259002B002C9D72 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		0FBB734E2259002B002C9D72 /* Boots7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots7.jpeg; sourceTree = "<group>"; };
+		0FBB734F2259002B002C9D72 /* Boots6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots6.jpeg; sourceTree = "<group>"; };
+		0FBB73502259002B002C9D72 /* Boots1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots1.jpeg; sourceTree = "<group>"; };
+		0FBB73512259002B002C9D72 /* Boots3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots3.jpeg; sourceTree = "<group>"; };
+		0FBB73522259002B002C9D72 /* Boots2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots2.jpeg; sourceTree = "<group>"; };
+		0FBB73532259002B002C9D72 /* Boots5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots5.jpeg; sourceTree = "<group>"; };
+		0FBB73542259002B002C9D72 /* Boots4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Boots4.jpeg; sourceTree = "<group>"; };
+		0FBB73562259002B002C9D72 /* Hoodie5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie5.jpeg; sourceTree = "<group>"; };
+		0FBB73572259002B002C9D72 /* Hoodie4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie4.jpeg; sourceTree = "<group>"; };
+		0FBB73582259002B002C9D72 /* Hoodie3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie3.jpeg; sourceTree = "<group>"; };
+		0FBB73592259002B002C9D72 /* Hoodie2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie2.jpeg; sourceTree = "<group>"; };
+		0FBB735A2259002B002C9D72 /* Hoodie1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie1.jpeg; sourceTree = "<group>"; };
+		0FBB735B2259002B002C9D72 /* Hoodie6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hoodie6.jpeg; sourceTree = "<group>"; };
+		0FBB735D2259002B002C9D72 /* Gloves1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves1.jpeg; sourceTree = "<group>"; };
+		0FBB735E2259002B002C9D72 /* Gloves6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves6.jpeg; sourceTree = "<group>"; };
+		0FBB735F2259002B002C9D72 /* Gloves4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves4.jpeg; sourceTree = "<group>"; };
+		0FBB73602259002B002C9D72 /* Gloves5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves5.jpeg; sourceTree = "<group>"; };
+		0FBB73612259002B002C9D72 /* Gloves2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves2.jpeg; sourceTree = "<group>"; };
+		0FBB73622259002B002C9D72 /* Gloves3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gloves3.jpeg; sourceTree = "<group>"; };
+		0FBB73642259002B002C9D72 /* Bindings1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings1.jpeg; sourceTree = "<group>"; };
+		0FBB73652259002B002C9D72 /* Bindings5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings5.jpeg; sourceTree = "<group>"; };
+		0FBB73662259002B002C9D72 /* Bindings4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings4.jpeg; sourceTree = "<group>"; };
+		0FBB73672259002B002C9D72 /* Bindings3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings3.jpeg; sourceTree = "<group>"; };
+		0FBB73682259002B002C9D72 /* Bindings2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bindings2.jpeg; sourceTree = "<group>"; };
+		0FBB7384225900BD002C9D72 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0FECCF2C2258FC9900E1026D /* Recipe Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FECCF2F2258FC9900E1026D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FECCF312258FC9900E1026D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +186,7 @@
 		0FECCF362258FC9A00E1026D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FECCF392258FC9A00E1026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FECCF3B2258FC9A00E1026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GlidingCollection.xcodeproj; path = "../../Downloads/gliding-collection-master/GlidingCollection.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +194,122 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5D0FD0225A384C000572B6 /* SwiftyJSON.framework in Frameworks */,
+				0FECCF602258FEAE00E1026D /* GlidingCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5D0FB8225A3832000572B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */,
+				0F5D0FC5225A3832000572B6 /* SwiftyJSON iOS Tests.xctest */,
+				0F5D0FC7225A3832000572B6 /* SwiftyJSON.framework */,
+				0F5D0FC9225A3832000572B6 /* SwiftyJSON macOS Tests.xctest */,
+				0F5D0FCB225A3832000572B6 /* SwiftyJSON.framework */,
+				0F5D0FCD225A3832000572B6 /* SwiftyJSON.framework */,
+				0F5D0FCF225A3832000572B6 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F5D0FD6225A3CEE000572B6 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0F5D0FD7225A3CEE000572B6 /* japan1.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		0FBB73462259002A002C9D72 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB73472259002A002C9D72 /* FileManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0FBB73492259002B002C9D72 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB734A2259002B002C9D72 /* CollectionCell.swift */,
+				0FBB734B2259002B002C9D72 /* CollectionCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		0FBB734C2259002B002C9D72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB734D2259002B002C9D72 /* Boots */,
+				0FBB73552259002B002C9D72 /* Hoodie */,
+				0FBB735C2259002B002C9D72 /* Gloves */,
+				0FBB73632259002B002C9D72 /* Bindings */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0FBB734D2259002B002C9D72 /* Boots */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB734E2259002B002C9D72 /* Boots7.jpeg */,
+				0FBB734F2259002B002C9D72 /* Boots6.jpeg */,
+				0FBB73502259002B002C9D72 /* Boots1.jpeg */,
+				0FBB73512259002B002C9D72 /* Boots3.jpeg */,
+				0FBB73522259002B002C9D72 /* Boots2.jpeg */,
+				0FBB73532259002B002C9D72 /* Boots5.jpeg */,
+				0FBB73542259002B002C9D72 /* Boots4.jpeg */,
+			);
+			path = Boots;
+			sourceTree = "<group>";
+		};
+		0FBB73552259002B002C9D72 /* Hoodie */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB73562259002B002C9D72 /* Hoodie5.jpeg */,
+				0FBB73572259002B002C9D72 /* Hoodie4.jpeg */,
+				0FBB73582259002B002C9D72 /* Hoodie3.jpeg */,
+				0FBB73592259002B002C9D72 /* Hoodie2.jpeg */,
+				0FBB735A2259002B002C9D72 /* Hoodie1.jpeg */,
+				0FBB735B2259002B002C9D72 /* Hoodie6.jpeg */,
+			);
+			path = Hoodie;
+			sourceTree = "<group>";
+		};
+		0FBB735C2259002B002C9D72 /* Gloves */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB735D2259002B002C9D72 /* Gloves1.jpeg */,
+				0FBB735E2259002B002C9D72 /* Gloves6.jpeg */,
+				0FBB735F2259002B002C9D72 /* Gloves4.jpeg */,
+				0FBB73602259002B002C9D72 /* Gloves5.jpeg */,
+				0FBB73612259002B002C9D72 /* Gloves2.jpeg */,
+				0FBB73622259002B002C9D72 /* Gloves3.jpeg */,
+			);
+			path = Gloves;
+			sourceTree = "<group>";
+		};
+		0FBB73632259002B002C9D72 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				0FBB73642259002B002C9D72 /* Bindings1.jpeg */,
+				0FBB73652259002B002C9D72 /* Bindings5.jpeg */,
+				0FBB73662259002B002C9D72 /* Bindings4.jpeg */,
+				0FBB73672259002B002C9D72 /* Bindings3.jpeg */,
+				0FBB73682259002B002C9D72 /* Bindings2.jpeg */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
 		0FECCF232258FC9900E1026D = {
 			isa = PBXGroup;
 			children = (
 				0FECCF2E2258FC9900E1026D /* Recipe Master */,
 				0FECCF2D2258FC9900E1026D /* Products */,
+				0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +324,32 @@
 		0FECCF2E2258FC9900E1026D /* Recipe Master */ = {
 			isa = PBXGroup;
 			children = (
+				0F5D0FD6225A3CEE000572B6 /* JSON */,
+				0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */,
+				0FBB73492259002B002C9D72 /* CollectionCell */,
+				0FBB73462259002A002C9D72 /* Extensions */,
+				0FBB734C2259002B002C9D72 /* Images */,
 				0FECCF2F2258FC9900E1026D /* AppDelegate.swift */,
 				0FECCF312258FC9900E1026D /* ViewController.swift */,
 				0FECCF332258FC9900E1026D /* Main.storyboard */,
+				0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */,
+				0FBB7384225900BD002C9D72 /* DetailViewController.swift */,
 				0FECCF362258FC9A00E1026D /* Assets.xcassets */,
 				0FECCF382258FC9A00E1026D /* LaunchScreen.storyboard */,
 				0FECCF3B2258FC9A00E1026D /* Info.plist */,
+				0F5D0F7E2259DF5B000572B6 /* detailTableViewCell.swift */,
+				0FB3504D225CEC96001A9AD8 /* PageViewController.swift */,
 			);
 			path = "Recipe Master";
+			sourceTree = "<group>";
+		};
+		0FECCF582258FE9800E1026D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */,
+				0FECCF5F2258FE9900E1026D /* GlidingCollectionDemo.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +362,13 @@
 				0FECCF282258FC9900E1026D /* Sources */,
 				0FECCF292258FC9900E1026D /* Frameworks */,
 				0FECCF2A2258FC9900E1026D /* Resources */,
+				0FECCF542258FDA500E1026D /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0FECCF632258FEAE00E1026D /* PBXTargetDependency */,
+				0F5D0FD3225A384C000572B6 /* PBXTargetDependency */,
 			);
 			name = "Recipe Master";
 			productName = "Recipe Master";
@@ -110,6 +401,16 @@
 			mainGroup = 0FECCF232258FC9900E1026D;
 			productRefGroup = 0FECCF2D2258FC9900E1026D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0FECCF582258FE9800E1026D /* Products */;
+					ProjectRef = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
+				},
+				{
+					ProductGroup = 0F5D0FB8225A3832000572B6 /* Products */;
+					ProjectRef = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0FECCF2B2258FC9900E1026D /* Recipe Master */,
@@ -117,14 +418,106 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F5D0FC2225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F5D0FC5225A3832000572B6 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 0F5D0FC4225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F5D0FC7225A3832000572B6 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F5D0FC6225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F5D0FC9225A3832000572B6 /* SwiftyJSON macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON macOS Tests.xctest";
+			remoteRef = 0F5D0FC8225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F5D0FCB225A3832000572B6 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F5D0FCA225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F5D0FCD225A3832000572B6 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F5D0FCC225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F5D0FCF225A3832000572B6 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 0F5D0FCE225A3832000572B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlidingCollection.framework;
+			remoteRef = 0FECCF5C2258FE9900E1026D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0FECCF5F2258FE9900E1026D /* GlidingCollectionDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GlidingCollectionDemo.app;
+			remoteRef = 0FECCF5E2258FE9900E1026D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		0FECCF2A2258FC9900E1026D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBB737C2259002B002C9D72 /* Gloves5.jpeg in Resources */,
+				0FBB737B2259002B002C9D72 /* Gloves4.jpeg in Resources */,
+				0FBB736C2259002B002C9D72 /* Boots7.jpeg in Resources */,
+				0FBB736F2259002B002C9D72 /* Boots3.jpeg in Resources */,
+				0FBB73742259002B002C9D72 /* Hoodie4.jpeg in Resources */,
+				0FBB73792259002B002C9D72 /* Gloves1.jpeg in Resources */,
 				0FECCF3A2258FC9A00E1026D /* LaunchScreen.storyboard in Resources */,
+				0FBB736E2259002B002C9D72 /* Boots1.jpeg in Resources */,
+				0FBB73762259002B002C9D72 /* Hoodie2.jpeg in Resources */,
+				0F5D0FD8225A3CEE000572B6 /* japan1.json in Resources */,
+				0FBB737F2259002B002C9D72 /* Bindings1.jpeg in Resources */,
+				0FBB736D2259002B002C9D72 /* Boots6.jpeg in Resources */,
+				0FBB737D2259002B002C9D72 /* Gloves2.jpeg in Resources */,
+				0FBB73732259002B002C9D72 /* Hoodie5.jpeg in Resources */,
+				0FBB737E2259002B002C9D72 /* Gloves3.jpeg in Resources */,
+				0FBB737A2259002B002C9D72 /* Gloves6.jpeg in Resources */,
+				0FBB73782259002B002C9D72 /* Hoodie6.jpeg in Resources */,
+				0FBB73812259002B002C9D72 /* Bindings4.jpeg in Resources */,
+				0FBB73702259002B002C9D72 /* Boots2.jpeg in Resources */,
+				0FBB73772259002B002C9D72 /* Hoodie1.jpeg in Resources */,
 				0FECCF372258FC9A00E1026D /* Assets.xcassets in Resources */,
 				0FECCF352258FC9900E1026D /* Main.storyboard in Resources */,
+				0FBB73802259002B002C9D72 /* Bindings5.jpeg in Resources */,
+				0FBB736B2259002B002C9D72 /* CollectionCell.xib in Resources */,
+				0FBB73752259002B002C9D72 /* Hoodie3.jpeg in Resources */,
+				0FBB73712259002B002C9D72 /* Boots5.jpeg in Resources */,
+				0FBB73722259002B002C9D72 /* Boots4.jpeg in Resources */,
+				0FBB73832259002B002C9D72 /* Bindings2.jpeg in Resources */,
+				0FBB73822259002B002C9D72 /* Bindings3.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,12 +528,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBB73692259002B002C9D72 /* FileManager.swift in Sources */,
+				0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */,
+				0FB35058225CF3FF001A9AD8 /* BookSubViewController.swift in Sources */,
 				0FECCF322258FC9900E1026D /* ViewController.swift in Sources */,
+				0F5D0F7F2259DF5B000572B6 /* detailTableViewCell.swift in Sources */,
+				0FBB7385225900BD002C9D72 /* DetailViewController.swift in Sources */,
 				0FECCF302258FC9900E1026D /* AppDelegate.swift in Sources */,
+				0FBB736A2259002B002C9D72 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F5D0FD3225A384C000572B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 0F5D0FD2225A384C000572B6 /* PBXContainerItemProxy */;
+		};
+		0FECCF632258FEAE00E1026D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlidingCollection;
+			targetProxy = 0FECCF622258FEAE00E1026D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FECCF332258FC9900E1026D /* Main.storyboard */ = {
@@ -281,6 +693,7 @@
 		0FECCF3F2258FC9A00E1026D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Recipe Master/Info.plist";
@@ -298,6 +711,7 @@
 		0FECCF402258FC9A00E1026D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Recipe Master/Info.plist";
