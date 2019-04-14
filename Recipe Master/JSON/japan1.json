@@ -1,22 +1,29 @@
-[
-    [
-      {
-        "ItemName": 1881,
-        "ItemVolume": "myimageURL"
-      },
-      {
-        "ItemName": 6333,
-        "ItemVolume": "myimageURL"
-      }
-    ],
-    [
-      {
-        "StepDescription": 1881,
-        "StepImage": "myimageURL"
-      },
-      {
-        "StepDescription": 6333,
-        "StepImage": "myimageURL"
-      }
+{
+    "FirstPage": {
+        "Name": "Orange Teriyaki Chicken Wings",
+        "Cover": "Japan/Japan1/Cover",
+        "INGREDIENT": [
+            "1 lb chicken wings (flats/drumettes) (454 g)",
+            "¼ tsp salt ",
+            "Freshly ground black pepper",
+            "1 Tbsp extra virgin olive oil",
+            "1 stalk celery",
+            "2 cloves garlic",
+            "1 bay leaf"
+        ]
+    },
+    "Steps": [
+        {
+            "Image": "Japan/Japan1/Step1",
+            "Description": "Gather all the ingredients."
+        },
+        {
+            "Image": "Japan/Japan1/Step2",
+            "Description": "Cut celery into 2” pieces and smash them with the flat side of the knife. "
+        },
+        {
+            "Image": "Japan/Japan1/Step3",
+            "Description": "Smash the garlic with the flat side of the knife and discard the peel."
+        }
     ]
-  ]
+}

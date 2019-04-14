@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var glidingView: GlidingCollection!
     
     fileprivate var collectionView: UICollectionView!
-    fileprivate var items = ["gloves", "boots", "bindings", "hoodie"]
+    fileprivate var items = ["America", "Chinese", "Thai", "Japan"]
     fileprivate var images: [[UIImage?]] = []
     
     override func viewDidLoad() {
@@ -47,7 +47,7 @@ extension ViewController {
     
     private func loadImages() {
         for item in items {
-            let imageURLs = FileManager.default.fileUrls(for: "jpeg", fileName: item)
+            let imageURLs = FileManager.default.fileUrls(for: "jpg", fileName: item)
             var images: [UIImage?] = []
             for url in imageURLs {
                 guard let data = try? Data(contentsOf: url) else { continue }
@@ -96,6 +96,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         print("Selected item #\(item) in section #\(section)")
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyBoard.instantiateViewController(withIdentifier: "pageView") as? PageViewController {
+            
+            controller.input = "japan1"
+            
             self.navigationController?.pushViewController(controller, animated: true)
         }
         

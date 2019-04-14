@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+    
+    var input = ""
 
     lazy var subViewControllers:[UIViewController] = []
 
@@ -19,35 +22,50 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         self.dataSource = self;
         
         //generate subView and to subView array
+        
         subViewGenerate()
         setViewControllers([subViewControllers[0]], direction: .forward , animated: true, completion: nil)
     }
     
     func subViewGenerate() {
-        let end = 3
-        var i = 1
-        var color = ""
         
-        for _ in 1...end{
-            switch i{
-            case 1:
-                color = "red"
-                break
-            default:
-                color = "green"
-                break
-            }
+        //JSON
+        guard let path = Bundle.main.path(forResource: input, ofType: "json") else { return }
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let data = try Data(contentsOf: url)
+           
+            let json = try JSON(data: data)
             
-            let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bookSubView") as! BookSubViewController
+            let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Detail") as! DetailViewController
             
-            view.input = color
+            view.jsonInput = json["FirstPage"]
+            
             
             subViewControllers.append(view)
             
-            i = i+1;
+            var i = 0
+            
+            for (_,subJson):(String, JSON) in json["Steps"]{
+                
+                let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "bookSubView") as! BookSubViewController
+                
+                view.stepNumber = i
+                
+                view.jsonInput = subJson
+                
+                subViewControllers.append(view)
+                
+                i = i + 1
+                
+            }
+           
+        }
+        catch {
+            print(error)
         }
         
-       
         
     }
     

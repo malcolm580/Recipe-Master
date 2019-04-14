@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class BookSubViewController: UIViewController {
     
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var topLabel: UILabel!
     
-    @IBOutlet weak var testLabel: UILabel!
+    var jsonInput : JSON = ""
     
-    var input = ""
+    var stepNumber : Int  = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        testLabel.text = input
+        
+        topLabel.text = "Step \(stepNumber+1)"
+        image.image = UIImage(named: jsonInput["Image"].stringValue)
+        textView.text = jsonInput["Description"].stringValue
     }
     
 
