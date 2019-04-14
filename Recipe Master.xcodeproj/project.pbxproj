@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F49BFBA2263001F000B029B /* japan3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFAE2263001F000B029B /* japan3.jpg */; };
-		0F49BFBB2263001F000B029B /* japan2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFAF2263001F000B029B /* japan2.jpg */; };
-		0F49BFBC2263001F000B029B /* japn4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFB02263001F000B029B /* japn4.jpg */; };
-		0F49BFBF2263001F000B029B /* America2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFB52263001F000B029B /* America2.jpg */; };
-		0F49BFC02263001F000B029B /* America1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFB62263001F000B029B /* America1.jpg */; };
-		0F49BFC12263001F000B029B /* Chinese1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFB82263001F000B029B /* Chinese1.jpg */; };
-		0F49BFC22263001F000B029B /* Chinese2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFB92263001F000B029B /* Chinese2.jpg */; };
-		0F49BFC42263004E000B029B /* Japan1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFC32263004E000B029B /* Japan1.jpg */; };
-		0F49BFC82263009D000B029B /* Thai1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFC62263009D000B029B /* Thai1.jpg */; };
-		0F49BFC92263009D000B029B /* Thai2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F49BFC72263009D000B029B /* Thai2.jpg */; };
 		0F5D0FD0225A384C000572B6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */; };
 		0F5D0FD1225A384C000572B6 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F5D0FD8225A3CEE000572B6 /* japan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D0FD7225A3CEE000572B6 /* japan1.json */; };
 		0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3504D225CEC96001A9AD8 /* PageViewController.swift */; };
 		0FB35058225CF3FF001A9AD8 /* BookSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */; };
+		0FB79498226302AF00D765B8 /* Thai1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7948B226302AF00D765B8 /* Thai1.jpg */; };
+		0FB79499226302AF00D765B8 /* Thai2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7948C226302AF00D765B8 /* Thai2.jpg */; };
+		0FB7949A226302AF00D765B8 /* America2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7948E226302AF00D765B8 /* America2.jpg */; };
+		0FB7949B226302AF00D765B8 /* America1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB7948F226302AF00D765B8 /* America1.jpg */; };
+		0FB7949C226302AF00D765B8 /* japan3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79491226302AF00D765B8 /* japan3.jpg */; };
+		0FB7949D226302AF00D765B8 /* japan2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79492226302AF00D765B8 /* japan2.jpg */; };
+		0FB7949E226302AF00D765B8 /* Japan1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79493226302AF00D765B8 /* Japan1.jpg */; };
+		0FB7949F226302AF00D765B8 /* japan4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79494226302AF00D765B8 /* japan4.jpg */; };
+		0FB794A0226302AF00D765B8 /* Chinese1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79496226302AF00D765B8 /* Chinese1.jpg */; };
+		0FB794A1226302AF00D765B8 /* Chinese2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79497226302AF00D765B8 /* Chinese2.jpg */; };
 		0FBB73692259002B002C9D72 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB73472259002A002C9D72 /* FileManager.swift */; };
 		0FBB736A2259002B002C9D72 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB734A2259002B002C9D72 /* CollectionCell.swift */; };
 		0FBB736B2259002B002C9D72 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB734B2259002B002C9D72 /* CollectionCell.xib */; };
@@ -131,20 +131,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F49BFAE2263001F000B029B /* japan3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan3.jpg; sourceTree = "<group>"; };
-		0F49BFAF2263001F000B029B /* japan2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan2.jpg; sourceTree = "<group>"; };
-		0F49BFB02263001F000B029B /* japn4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japn4.jpg; sourceTree = "<group>"; };
-		0F49BFB52263001F000B029B /* America2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = America2.jpg; sourceTree = "<group>"; };
-		0F49BFB62263001F000B029B /* America1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = America1.jpg; sourceTree = "<group>"; };
-		0F49BFB82263001F000B029B /* Chinese1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chinese1.jpg; sourceTree = "<group>"; };
-		0F49BFB92263001F000B029B /* Chinese2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chinese2.jpg; sourceTree = "<group>"; };
-		0F49BFC32263004E000B029B /* Japan1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Japan1.jpg; sourceTree = "<group>"; };
-		0F49BFC62263009D000B029B /* Thai1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thai1.jpg; sourceTree = "<group>"; };
-		0F49BFC72263009D000B029B /* Thai2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thai2.jpg; sourceTree = "<group>"; };
 		0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		0F5D0FD7225A3CEE000572B6 /* japan1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = japan1.json; sourceTree = "<group>"; };
 		0FB3504D225CEC96001A9AD8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSubViewController.swift; sourceTree = "<group>"; };
+		0FB7948B226302AF00D765B8 /* Thai1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thai1.jpg; sourceTree = "<group>"; };
+		0FB7948C226302AF00D765B8 /* Thai2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thai2.jpg; sourceTree = "<group>"; };
+		0FB7948E226302AF00D765B8 /* America2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = America2.jpg; sourceTree = "<group>"; };
+		0FB7948F226302AF00D765B8 /* America1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = America1.jpg; sourceTree = "<group>"; };
+		0FB79491226302AF00D765B8 /* japan3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan3.jpg; sourceTree = "<group>"; };
+		0FB79492226302AF00D765B8 /* japan2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan2.jpg; sourceTree = "<group>"; };
+		0FB79493226302AF00D765B8 /* Japan1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Japan1.jpg; sourceTree = "<group>"; };
+		0FB79494226302AF00D765B8 /* japan4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan4.jpg; sourceTree = "<group>"; };
+		0FB79496226302AF00D765B8 /* Chinese1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chinese1.jpg; sourceTree = "<group>"; };
+		0FB79497226302AF00D765B8 /* Chinese2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chinese2.jpg; sourceTree = "<group>"; };
 		0FBB73472259002A002C9D72 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		0FBB734A2259002B002C9D72 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		0FBB734B2259002B002C9D72 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
@@ -172,47 +172,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F49BFAD2263001F000B029B /* Japan */ = {
-			isa = PBXGroup;
-			children = (
-				0F49BFC32263004E000B029B /* Japan1.jpg */,
-				0F49BFAE2263001F000B029B /* japan3.jpg */,
-				0F49BFAF2263001F000B029B /* japan2.jpg */,
-				0F49BFB02263001F000B029B /* japn4.jpg */,
-			);
-			name = Japan;
-			path = ../Extensions/Japan;
-			sourceTree = "<group>";
-		};
-		0F49BFB42263001F000B029B /* America */ = {
-			isa = PBXGroup;
-			children = (
-				0F49BFB52263001F000B029B /* America2.jpg */,
-				0F49BFB62263001F000B029B /* America1.jpg */,
-			);
-			name = America;
-			path = ../Extensions/America;
-			sourceTree = "<group>";
-		};
-		0F49BFB72263001F000B029B /* Chinese */ = {
-			isa = PBXGroup;
-			children = (
-				0F49BFB82263001F000B029B /* Chinese1.jpg */,
-				0F49BFB92263001F000B029B /* Chinese2.jpg */,
-			);
-			name = Chinese;
-			path = ../Extensions/Chinese;
-			sourceTree = "<group>";
-		};
-		0F49BFC52263009D000B029B /* Thai */ = {
-			isa = PBXGroup;
-			children = (
-				0F49BFC62263009D000B029B /* Thai1.jpg */,
-				0F49BFC72263009D000B029B /* Thai2.jpg */,
-			);
-			path = Thai;
-			sourceTree = "<group>";
-		};
 		0F5D0FB8225A3832000572B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +194,55 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		0FB79489226302AF00D765B8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0FB7948A226302AF00D765B8 /* Thai */,
+				0FB7948D226302AF00D765B8 /* America */,
+				0FB79490226302AF00D765B8 /* Japan */,
+				0FB79495226302AF00D765B8 /* Chinese */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		0FB7948A226302AF00D765B8 /* Thai */ = {
+			isa = PBXGroup;
+			children = (
+				0FB7948B226302AF00D765B8 /* Thai1.jpg */,
+				0FB7948C226302AF00D765B8 /* Thai2.jpg */,
+			);
+			path = Thai;
+			sourceTree = "<group>";
+		};
+		0FB7948D226302AF00D765B8 /* America */ = {
+			isa = PBXGroup;
+			children = (
+				0FB7948E226302AF00D765B8 /* America2.jpg */,
+				0FB7948F226302AF00D765B8 /* America1.jpg */,
+			);
+			path = America;
+			sourceTree = "<group>";
+		};
+		0FB79490226302AF00D765B8 /* Japan */ = {
+			isa = PBXGroup;
+			children = (
+				0FB79491226302AF00D765B8 /* japan3.jpg */,
+				0FB79492226302AF00D765B8 /* japan2.jpg */,
+				0FB79493226302AF00D765B8 /* Japan1.jpg */,
+				0FB79494226302AF00D765B8 /* japan4.jpg */,
+			);
+			path = Japan;
+			sourceTree = "<group>";
+		};
+		0FB79495226302AF00D765B8 /* Chinese */ = {
+			isa = PBXGroup;
+			children = (
+				0FB79496226302AF00D765B8 /* Chinese1.jpg */,
+				0FB79497226302AF00D765B8 /* Chinese2.jpg */,
+			);
+			path = Chinese;
+			sourceTree = "<group>";
+		};
 		0FBB73462259002A002C9D72 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,17 +258,6 @@
 				0FBB734B2259002B002C9D72 /* CollectionCell.xib */,
 			);
 			path = CollectionCell;
-			sourceTree = "<group>";
-		};
-		0FBB734C2259002B002C9D72 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				0F49BFC52263009D000B029B /* Thai */,
-				0F49BFB42263001F000B029B /* America */,
-				0F49BFB72263001F000B029B /* Chinese */,
-				0F49BFAD2263001F000B029B /* Japan */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		0FECCF232258FC9900E1026D = {
@@ -283,11 +280,11 @@
 		0FECCF2E2258FC9900E1026D /* Recipe Master */ = {
 			isa = PBXGroup;
 			children = (
+				0FB79489226302AF00D765B8 /* Image */,
 				0F5D0FD6225A3CEE000572B6 /* JSON */,
 				0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */,
 				0FBB73492259002B002C9D72 /* CollectionCell */,
 				0FBB73462259002A002C9D72 /* Extensions */,
-				0FBB734C2259002B002C9D72 /* Images */,
 				0FECCF2F2258FC9900E1026D /* AppDelegate.swift */,
 				0FECCF312258FC9900E1026D /* ViewController.swift */,
 				0FECCF332258FC9900E1026D /* Main.storyboard */,
@@ -447,21 +444,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB79499226302AF00D765B8 /* Thai2.jpg in Resources */,
+				0FB7949B226302AF00D765B8 /* America1.jpg in Resources */,
+				0FB7949D226302AF00D765B8 /* japan2.jpg in Resources */,
 				0FECCF3A2258FC9A00E1026D /* LaunchScreen.storyboard in Resources */,
-				0F49BFBB2263001F000B029B /* japan2.jpg in Resources */,
+				0FB7949E226302AF00D765B8 /* Japan1.jpg in Resources */,
+				0FB7949F226302AF00D765B8 /* japan4.jpg in Resources */,
 				0F5D0FD8225A3CEE000572B6 /* japan1.json in Resources */,
-				0F49BFC92263009D000B029B /* Thai2.jpg in Resources */,
-				0F49BFC82263009D000B029B /* Thai1.jpg in Resources */,
 				0FECCF372258FC9A00E1026D /* Assets.xcassets in Resources */,
-				0F49BFBF2263001F000B029B /* America2.jpg in Resources */,
+				0FB79498226302AF00D765B8 /* Thai1.jpg in Resources */,
+				0FB794A0226302AF00D765B8 /* Chinese1.jpg in Resources */,
+				0FB794A1226302AF00D765B8 /* Chinese2.jpg in Resources */,
+				0FB7949C226302AF00D765B8 /* japan3.jpg in Resources */,
 				0FECCF352258FC9900E1026D /* Main.storyboard in Resources */,
-				0F49BFC12263001F000B029B /* Chinese1.jpg in Resources */,
-				0F49BFBC2263001F000B029B /* japn4.jpg in Resources */,
-				0F49BFBA2263001F000B029B /* japan3.jpg in Resources */,
-				0F49BFC42263004E000B029B /* Japan1.jpg in Resources */,
-				0F49BFC02263001F000B029B /* America1.jpg in Resources */,
-				0F49BFC22263001F000B029B /* Chinese2.jpg in Resources */,
 				0FBB736B2259002B002C9D72 /* CollectionCell.xib in Resources */,
+				0FB7949A226302AF00D765B8 /* America2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
