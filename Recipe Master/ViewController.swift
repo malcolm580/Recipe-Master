@@ -58,6 +58,8 @@ extension ViewController {
         }
     }
     
+
+    
 }
 
 // MARK: - CollectionView 🎛
@@ -97,7 +99,13 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         if let controller = storyBoard.instantiateViewController(withIdentifier: "pageView") as? PageViewController {
             
-            controller.input = "japan1"
+            if(section == 0){
+                 controller.input = "american1"
+            }
+            
+            if(section == 3){
+                controller.input = "japan1"
+            }
             
             self.navigationController?.pushViewController(controller, animated: true)
         }

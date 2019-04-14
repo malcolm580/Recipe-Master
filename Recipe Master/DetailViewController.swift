@@ -36,8 +36,26 @@ class DetailViewController: UIViewController {
         for (_,subJson):(String, JSON)  in jsonInput["INGREDIENT"]{
             detail.append(subJson.stringValue)
         }
+        
+
+        
     }
     
+    
+    @IBAction func switchEvent(_ sender: UISwitch) {
+        
+        let cells = self.detailTable.visibleCells as! Array<DetailTableViewCell>
+        
+        if(sender.isOn){
+            for cell in cells {
+                cell.addItemToCartButton.setOn(true, animated: true)
+            }
+        }else{
+            for cell in cells {
+                cell.addItemToCartButton.setOn(false, animated: true)
+            }
+        }
+    }
     
 
 }
@@ -52,20 +70,24 @@ extension DetailViewController : UITableViewDelegate, UITableViewDataSource{
     //retrun row cell base on section
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
+//        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
+//
+//        cell.textLabel?.text = detail[indexPath.row]
+//        cell.textLabel?.font.withSize(20)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! DetailTableViewCell
+        cell.detailText?.text = detail[indexPath.row]
+        cell.detailText?.font.withSize(20)
         
-        cell.textLabel?.text = detail[indexPath.row]
         return cell
-        
-     
     }
 
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
     
-    //set section header
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Ingredient"
     }
-
-    
     
 }

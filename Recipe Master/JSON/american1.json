@@ -1,0 +1,43 @@
+{
+    "FirstPage": {
+        "Name": "Miso Pickling",
+        "Cover": "American/American1/Cover",
+        "INGREDIENT": [
+            "1 cup miso (300 g)",
+            "2 Tbsp mirin (30 ml)",
+            "sugar (optional)",
+            "10 cm kombu",
+            "garlic"
+        ]
+    },
+    "Steps": [
+        {
+            "Image": "American/American1/Step1",
+            "Description": "Gather all the ingredients."
+        },
+        {
+            "Image": "American/American1/Step2",
+            "Description": "We make 2 bags. For radish misozuke, we make a plain misodoko. In a medium bowl, combine ingredients for misodoko and mix well. "
+        },
+        {
+            "Image": "American/American1/Step3",
+            "Description": "For carrot misozuke, I add kombu and garlic cloves for additional flavors. Cut the kombu into thin strips and mix all together. Other optional add-ins include red chili and grated ginger, etc."
+        },
+        {
+            "Image": "American/American1/Step3",
+            "Description": "Transfer each misodoko into a resealable bag or glass container with a lid."
+        },
+        {
+            "Image": "American/American1/Step4",
+            "Description": "Rinse the radish under water nicely. Peel the carrot and cut it in halves lengthwise."
+        },
+        {
+            "Image": "American/American1/Step5",
+            "Description": "For the radish misozuke, add the radish in the plain misodoko, remove the air, and seal the bag. Rub with the miso from outside the bag."
+        },
+        {
+            "Image": "American/American1/Step6",
+            "Description": "For the carrot misozuke, add the carrot and several cloves of garlic (peeled) to the bag with kombu strips in it. Rub the vegetables with miso from outside the bag."
+        }
+    ]
+}

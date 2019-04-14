@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F5D0FD0225A384C000572B6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */; };
-		0F5D0FD1225A384C000572B6 /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F06677522633EDC00981BA4 /* GlidingCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F06662822633C7700981BA4 /* GlidingCollection.framework */; };
+		0F06677622633EDC00981BA4 /* GlidingCollection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F06662822633C7700981BA4 /* GlidingCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F06677A22633EE700981BA4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F06661522633C6200981BA4 /* SwiftyJSON.framework */; };
+		0F06677B22633EE700981BA4 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F06661522633C6200981BA4 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F06677F2263451000981BA4 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F06677E2263451000981BA4 /* BookmarkViewController.swift */; };
 		0F5D0FD8225A3CEE000572B6 /* japan1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D0FD7225A3CEE000572B6 /* japan1.json */; };
 		0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3504D225CEC96001A9AD8 /* PageViewController.swift */; };
 		0FB35058225CF3FF001A9AD8 /* BookSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */; };
@@ -22,6 +25,8 @@
 		0FB7949F226302AF00D765B8 /* japan4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79494226302AF00D765B8 /* japan4.jpg */; };
 		0FB794A0226302AF00D765B8 /* Chinese1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79496226302AF00D765B8 /* Chinese1.jpg */; };
 		0FB794A1226302AF00D765B8 /* Chinese2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FB79497226302AF00D765B8 /* Chinese2.jpg */; };
+		0FB794A32263264A00D765B8 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB794A22263264A00D765B8 /* DetailTableViewCell.swift */; };
+		0FB794A52263395C00D765B8 /* american1.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FB794A42263395C00D765B8 /* american1.json */; };
 		0FBB73692259002B002C9D72 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB73472259002A002C9D72 /* FileManager.swift */; };
 		0FBB736A2259002B002C9D72 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBB734A2259002B002C9D72 /* CollectionCell.swift */; };
 		0FBB736B2259002B002C9D72 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBB734B2259002B002C9D72 /* CollectionCell.xib */; };
@@ -31,11 +36,72 @@
 		0FECCF352258FC9900E1026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF332258FC9900E1026D /* Main.storyboard */; };
 		0FECCF372258FC9A00E1026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF362258FC9A00E1026D /* Assets.xcassets */; };
 		0FECCF3A2258FC9A00E1026D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF382258FC9A00E1026D /* LaunchScreen.storyboard */; };
-		0FECCF602258FEAE00E1026D /* GlidingCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */; };
-		0FECCF612258FEAE00E1026D /* GlidingCollection.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0F06661422633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		0F06661622633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		0F06661822633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS";
+		};
+		0F06661A22633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON macOS Tests";
+		};
+		0F06661C22633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		0F06661E22633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		0F06662022633C6200981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+		0F06662722633C7700981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D56EE9F1E6B2D5E008C3698;
+			remoteInfo = GlidingCollection;
+		};
+		0F06662922633C7700981BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D56EEAE1E6B2D82008C3698;
+			remoteInfo = GlidingCollectionDemo;
+		};
 		0F5D0FC2225A3832000572B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
@@ -85,52 +151,27 @@
 			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
-		0F5D0FD2225A384C000572B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
-			remoteInfo = "SwiftyJSON iOS";
-		};
-		0FECCF5C2258FE9900E1026D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9D56EE9F1E6B2D5E008C3698;
-			remoteInfo = GlidingCollection;
-		};
-		0FECCF5E2258FE9900E1026D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9D56EEAE1E6B2D82008C3698;
-			remoteInfo = GlidingCollectionDemo;
-		};
-		0FECCF622258FEAE00E1026D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D56EE9E1E6B2D5E008C3698;
-			remoteInfo = GlidingCollection;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0FECCF542258FDA500E1026D /* Copy Frameworks */ = {
+		0F06677922633EDC00981BA4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F5D0FD1225A384C000572B6 /* SwiftyJSON.framework in Copy Frameworks */,
-				0FECCF612258FEAE00E1026D /* GlidingCollection.framework in Copy Frameworks */,
+				0F06677B22633EE700981BA4 /* SwiftyJSON.framework in Embed Frameworks */,
+				0F06677622633EDC00981BA4 /* GlidingCollection.framework in Embed Frameworks */,
 			);
-			name = "Copy Frameworks";
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GlidingCollection.xcodeproj; path = "gliding-collection-master/GlidingCollection.xcodeproj"; sourceTree = "<group>"; };
+		0F06677E2263451000981BA4 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		0F5D0FB7225A3832000572B6 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "../../../Downloads/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		0F5D0FD7225A3CEE000572B6 /* japan1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = japan1.json; sourceTree = "<group>"; };
 		0FB3504D225CEC96001A9AD8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +186,8 @@
 		0FB79494226302AF00D765B8 /* japan4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = japan4.jpg; sourceTree = "<group>"; };
 		0FB79496226302AF00D765B8 /* Chinese1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chinese1.jpg; sourceTree = "<group>"; };
 		0FB79497226302AF00D765B8 /* Chinese2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chinese2.jpg; sourceTree = "<group>"; };
+		0FB794A22263264A00D765B8 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		0FB794A42263395C00D765B8 /* american1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = american1.json; sourceTree = "<group>"; };
 		0FBB73472259002A002C9D72 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		0FBB734A2259002B002C9D72 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		0FBB734B2259002B002C9D72 /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
@@ -156,7 +199,6 @@
 		0FECCF362258FC9A00E1026D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FECCF392258FC9A00E1026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FECCF3B2258FC9A00E1026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GlidingCollection.xcodeproj; path = "../../Downloads/gliding-collection-master/GlidingCollection.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,14 +206,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F5D0FD0225A384C000572B6 /* SwiftyJSON.framework in Frameworks */,
-				0FECCF602258FEAE00E1026D /* GlidingCollection.framework in Frameworks */,
+				0F06677A22633EE700981BA4 /* SwiftyJSON.framework in Frameworks */,
+				0F06677522633EDC00981BA4 /* GlidingCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F06660A22633C6200981BA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F06661522633C6200981BA4 /* SwiftyJSON.framework */,
+				0F06661722633C6200981BA4 /* SwiftyJSON iOS Tests.xctest */,
+				0F06661922633C6200981BA4 /* SwiftyJSON.framework */,
+				0F06661B22633C6200981BA4 /* SwiftyJSON macOS Tests.xctest */,
+				0F06661D22633C6200981BA4 /* SwiftyJSON.framework */,
+				0F06661F22633C6200981BA4 /* SwiftyJSON.framework */,
+				0F06662122633C6200981BA4 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F06662322633C7600981BA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F06662822633C7700981BA4 /* GlidingCollection.framework */,
+				0F06662A22633C7700981BA4 /* GlidingCollectionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0F5D0FB8225A3832000572B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +254,7 @@
 		0F5D0FD6225A3CEE000572B6 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				0FB794A42263395C00D765B8 /* american1.json */,
 				0F5D0FD7225A3CEE000572B6 /* japan1.json */,
 			);
 			path = JSON;
@@ -263,9 +329,10 @@
 		0FECCF232258FC9900E1026D = {
 			isa = PBXGroup;
 			children = (
+				0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */,
+				0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */,
 				0FECCF2E2258FC9900E1026D /* Recipe Master */,
 				0FECCF2D2258FC9900E1026D /* Products */,
-				0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,17 +361,10 @@
 				0FECCF3B2258FC9A00E1026D /* Info.plist */,
 				0FB35057225CF3FF001A9AD8 /* BookSubViewController.swift */,
 				0FB3504D225CEC96001A9AD8 /* PageViewController.swift */,
+				0FB794A22263264A00D765B8 /* DetailTableViewCell.swift */,
+				0F06677E2263451000981BA4 /* BookmarkViewController.swift */,
 			);
 			path = "Recipe Master";
-			sourceTree = "<group>";
-		};
-		0FECCF582258FE9800E1026D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */,
-				0FECCF5F2258FE9900E1026D /* GlidingCollectionDemo.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,13 +377,11 @@
 				0FECCF282258FC9900E1026D /* Sources */,
 				0FECCF292258FC9900E1026D /* Frameworks */,
 				0FECCF2A2258FC9900E1026D /* Resources */,
-				0FECCF542258FDA500E1026D /* Copy Frameworks */,
+				0F06677922633EDC00981BA4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0FECCF632258FEAE00E1026D /* PBXTargetDependency */,
-				0F5D0FD3225A384C000572B6 /* PBXTargetDependency */,
 			);
 			name = "Recipe Master";
 			productName = "Recipe Master";
@@ -358,8 +416,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0FECCF582258FE9800E1026D /* Products */;
-					ProjectRef = 0FECCF572258FE9800E1026D /* GlidingCollection.xcodeproj */;
+					ProductGroup = 0F06662322633C7600981BA4 /* Products */;
+					ProjectRef = 0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */;
+				},
+				{
+					ProductGroup = 0F06660A22633C6200981BA4 /* Products */;
+					ProjectRef = 0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */;
 				},
 				{
 					ProductGroup = 0F5D0FB8225A3832000572B6 /* Products */;
@@ -374,6 +436,69 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		0F06661522633C6200981BA4 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F06661422633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06661722633C6200981BA4 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 0F06661622633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06661922633C6200981BA4 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F06661822633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06661B22633C6200981BA4 /* SwiftyJSON macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON macOS Tests.xctest";
+			remoteRef = 0F06661A22633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06661D22633C6200981BA4 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F06661C22633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06661F22633C6200981BA4 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 0F06661E22633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06662122633C6200981BA4 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 0F06662022633C6200981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06662822633C7700981BA4 /* GlidingCollection.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GlidingCollection.framework;
+			remoteRef = 0F06662722633C7700981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F06662A22633C7700981BA4 /* GlidingCollectionDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GlidingCollectionDemo.app;
+			remoteRef = 0F06662922633C7700981BA4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		0F5D0FC3225A3832000572B6 /* SwiftyJSON.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -423,20 +548,6 @@
 			remoteRef = 0F5D0FCE225A3832000572B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0FECCF5D2258FE9900E1026D /* GlidingCollection.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GlidingCollection.framework;
-			remoteRef = 0FECCF5C2258FE9900E1026D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0FECCF5F2258FE9900E1026D /* GlidingCollectionDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = GlidingCollectionDemo.app;
-			remoteRef = 0FECCF5E2258FE9900E1026D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -451,6 +562,7 @@
 				0FB7949E226302AF00D765B8 /* Japan1.jpg in Resources */,
 				0FB7949F226302AF00D765B8 /* japan4.jpg in Resources */,
 				0F5D0FD8225A3CEE000572B6 /* japan1.json in Resources */,
+				0FB794A52263395C00D765B8 /* american1.json in Resources */,
 				0FECCF372258FC9A00E1026D /* Assets.xcassets in Resources */,
 				0FB79498226302AF00D765B8 /* Thai1.jpg in Resources */,
 				0FB794A0226302AF00D765B8 /* Chinese1.jpg in Resources */,
@@ -471,28 +583,17 @@
 			files = (
 				0FBB73692259002B002C9D72 /* FileManager.swift in Sources */,
 				0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */,
+				0FB794A32263264A00D765B8 /* DetailTableViewCell.swift in Sources */,
 				0FB35058225CF3FF001A9AD8 /* BookSubViewController.swift in Sources */,
 				0FECCF322258FC9900E1026D /* ViewController.swift in Sources */,
 				0FBB7385225900BD002C9D72 /* DetailViewController.swift in Sources */,
 				0FECCF302258FC9900E1026D /* AppDelegate.swift in Sources */,
+				0F06677F2263451000981BA4 /* BookmarkViewController.swift in Sources */,
 				0FBB736A2259002B002C9D72 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0F5D0FD3225A384C000572B6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SwiftyJSON iOS";
-			targetProxy = 0F5D0FD2225A384C000572B6 /* PBXContainerItemProxy */;
-		};
-		0FECCF632258FEAE00E1026D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GlidingCollection;
-			targetProxy = 0FECCF622258FEAE00E1026D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FECCF332258FC9900E1026D /* Main.storyboard */ = {

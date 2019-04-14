@@ -25,6 +25,11 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         
         subViewGenerate()
         setViewControllers([subViewControllers[0]], direction: .forward , animated: true, completion: nil)
+        
+        //add navigation bar button
+        let favoriteButton = UIBarButtonItem(barButtonSystemItem: .bookmarks , target: self, action: #selector(tagItem))
+        self.navigationItem.rightBarButtonItem = favoriteButton
+        self.toolbarItems = [favoriteButton]
     }
     
     func subViewGenerate() {
@@ -67,6 +72,19 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         }
         
         
+    }
+    
+    @objc func tagItem(){
+        let alert = UIAlertController(title: "Bookmark", message: "You have add this receipt into Bookmark", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Confirm", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+                guard self?.presentedViewController == alert else { return }
+                
+                self?.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
     required init?(coder: NSCoder) {
