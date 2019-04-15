@@ -36,6 +36,9 @@
 		0FECCF352258FC9900E1026D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF332258FC9900E1026D /* Main.storyboard */; };
 		0FECCF372258FC9A00E1026D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF362258FC9A00E1026D /* Assets.xcassets */; };
 		0FECCF3A2258FC9A00E1026D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FECCF382258FC9A00E1026D /* LaunchScreen.storyboard */; };
+		5E8A3A8722645BB500FDAE23 /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8A3A7C22645BA900FDAE23 /* IBAnimatable.framework */; };
+		5E8A3A8822645BB500FDAE23 /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8A3A7C22645BA900FDAE23 /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E8A3A8E22645C8E00FDAE23 /* LaunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A3A8D22645C8E00FDAE23 /* LaunViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +154,27 @@
 			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
 			remoteInfo = "SwiftyJSON tvOS Tests";
 		};
+		5E8A3A7B22645BA900FDAE23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E27FCFF71ECD79DD00F74840;
+			remoteInfo = IBAnimatable;
+		};
+		5E8A3A7D22645BA900FDAE23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E27FD0001ECD79DD00F74840;
+			remoteInfo = IBAnimatableTests;
+		};
+		5E8A3A8922645BB500FDAE23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E27FCFF61ECD79DD00F74840;
+			remoteInfo = IBAnimatable;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,6 +186,7 @@
 			files = (
 				0F06677B22633EE700981BA4 /* SwiftyJSON.framework in Embed Frameworks */,
 				0F06677622633EDC00981BA4 /* GlidingCollection.framework in Embed Frameworks */,
+				5E8A3A8822645BB500FDAE23 /* IBAnimatable.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +224,8 @@
 		0FECCF362258FC9A00E1026D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FECCF392258FC9A00E1026D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FECCF3B2258FC9A00E1026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBAnimatable.xcodeproj; path = "IBAnimatable-master/IBAnimatable/IBAnimatable.xcodeproj"; sourceTree = "<group>"; };
+		5E8A3A8D22645C8E00FDAE23 /* LaunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +235,7 @@
 			files = (
 				0F06677A22633EE700981BA4 /* SwiftyJSON.framework in Frameworks */,
 				0F06677522633EDC00981BA4 /* GlidingCollection.framework in Frameworks */,
+				5E8A3A8722645BB500FDAE23 /* IBAnimatable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +357,7 @@
 		0FECCF232258FC9900E1026D = {
 			isa = PBXGroup;
 			children = (
+				5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */,
 				0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */,
 				0F06660922633C6200981BA4 /* SwiftyJSON.xcodeproj */,
 				0FECCF2E2258FC9900E1026D /* Recipe Master */,
@@ -363,8 +392,18 @@
 				0FB3504D225CEC96001A9AD8 /* PageViewController.swift */,
 				0FB794A22263264A00D765B8 /* DetailTableViewCell.swift */,
 				0F06677E2263451000981BA4 /* BookmarkViewController.swift */,
+				5E8A3A8D22645C8E00FDAE23 /* LaunViewController.swift */,
 			);
 			path = "Recipe Master";
+			sourceTree = "<group>";
+		};
+		5E8A3A7522645BA900FDAE23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E8A3A7C22645BA900FDAE23 /* IBAnimatable.framework */,
+				5E8A3A7E22645BA900FDAE23 /* IBAnimatableTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +421,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5E8A3A8A22645BB500FDAE23 /* PBXTargetDependency */,
 			);
 			name = "Recipe Master";
 			productName = "Recipe Master";
@@ -418,6 +458,10 @@
 				{
 					ProductGroup = 0F06662322633C7600981BA4 /* Products */;
 					ProjectRef = 0F06662222633C7600981BA4 /* GlidingCollection.xcodeproj */;
+				},
+				{
+					ProductGroup = 5E8A3A7522645BA900FDAE23 /* Products */;
+					ProjectRef = 5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */;
 				},
 				{
 					ProductGroup = 0F06660A22633C6200981BA4 /* Products */;
@@ -548,6 +592,20 @@
 			remoteRef = 0F5D0FCE225A3832000572B6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		5E8A3A7C22645BA900FDAE23 /* IBAnimatable.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IBAnimatable.framework;
+			remoteRef = 5E8A3A7B22645BA900FDAE23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5E8A3A7E22645BA900FDAE23 /* IBAnimatableTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IBAnimatableTests.xctest;
+			remoteRef = 5E8A3A7D22645BA900FDAE23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -583,6 +641,7 @@
 			files = (
 				0FBB73692259002B002C9D72 /* FileManager.swift in Sources */,
 				0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */,
+				5E8A3A8E22645C8E00FDAE23 /* LaunViewController.swift in Sources */,
 				0FB794A32263264A00D765B8 /* DetailTableViewCell.swift in Sources */,
 				0FB35058225CF3FF001A9AD8 /* BookSubViewController.swift in Sources */,
 				0FECCF322258FC9900E1026D /* ViewController.swift in Sources */,
@@ -594,6 +653,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E8A3A8A22645BB500FDAE23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBAnimatable;
+			targetProxy = 5E8A3A8922645BB500FDAE23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0FECCF332258FC9900E1026D /* Main.storyboard */ = {
