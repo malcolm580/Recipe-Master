@@ -310,8 +310,8 @@ ingredients into/from cart </string>
                     <connections>
                         <segue destination="KcD-Ue-WWP" kind="relationship" relationship="viewControllers" id="gz4-39-SxE"/>
                         <segue destination="AFA-YE-81D" kind="relationship" relationship="viewControllers" id="fuD-kJ-5uP"/>
-                        <segue destination="QVm-wh-a9s" kind="relationship" relationship="viewControllers" id="TgL-gW-V1n"/>
-                        <segue destination="mi0-D6-Xc2" kind="relationship" relationship="viewControllers" id="r2q-bY-Zha"/>
+                        <segue destination="soJ-yC-gri" kind="relationship" relationship="viewControllers" id="kmg-QE-OUo"/>
+                        <segue destination="mi0-D6-Xc2" kind="relationship" relationship="viewControllers" id="7vh-VC-dFw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jta-wC-lOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -388,6 +388,66 @@ ingredients into/from cart </string>
             </objects>
             <point key="canvasLocation" x="1944.9275362318842" y="792.85714285714278"/>
         </scene>
+        <!--Shopping View Controller-->
+        <scene sceneID="pZE-jO-hJx">
+            <objects>
+                <viewController id="soJ-yC-gri" customClass="ShoppingViewController" customModule="Recipe_Master" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Loc-Ux-Jsy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U8C-Af-lMn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Shopping Cart" id="gws-1M-HDm"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vug-h5-imZ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMW-NI-qS9" userLabel="Add button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="180" y="718" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="add"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_maskType" value="Circle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="Pop"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                        <point key="value" x="0.0" y="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="okm-Js-POb" kind="show" id="ZBs-jm-fJP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5OS-VZ-Hyd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="PPV-0u-NuN"/>
+                    <connections>
+                        <outlet property="shoppingTable" destination="Vug-h5-imZ" id="k20-UR-sv0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ub-IH-Sy8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.33333333333337" y="811.60714285714278"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="16b-jt-Cee">
             <objects>
@@ -405,32 +465,7 @@ ingredients into/from cart </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAY-0i-LWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1034.7826086956522" y="792.85714285714278"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ETJ-QX-eDu">
-            <objects>
-                <viewController id="QVm-wh-a9s" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CMV-TF-5cQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFC-v8-9lh">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Shopping Cart" id="Rsx-F3-rdH"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="b0V-yb-FZg"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="vOt-QV-Tcm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="csf-3q-idW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1040" y="1483"/>
+            <point key="canvasLocation" x="948" y="850"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="wZn-Dd-STi">
@@ -444,11 +479,11 @@ ingredients into/from cart </string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyf-FZ-U2H" customClass="AnimatableView" customModule="IBAnimatable">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyf-FZ-U2H" customClass="AnimatableView" customModule="IBAnimatable">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-R3-3k1" userLabel="Back button" customClass="AnimatableButton" customModule="IBAnimatable">
-                                        <rect key="frame" x="8" y="40" width="44" height="44"/>
+                                        <rect key="frame" x="8" y="50" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="MOu-5q-Jp7"/>
                                             <constraint firstAttribute="height" constant="44" id="qXc-bZ-sOh"/>
@@ -459,7 +494,7 @@ ingredients into/from cart </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bd-Ca-zrC" userLabel="Done button" customClass="AnimatableButton" customModule="IBAnimatable">
-                                        <rect key="frame" x="323" y="40" width="44" height="44"/>
+                                        <rect key="frame" x="362" y="50" width="44" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="gSx-Jh-Ea6"/>
                                             <constraint firstAttribute="width" constant="44" id="nMy-Xq-exT"/>
@@ -470,7 +505,7 @@ ingredients into/from cart </string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bR-2H-eax" userLabel="Add photo button" customClass="AnimatableButton" customModule="IBAnimatable">
-                                        <rect key="frame" x="179.5" y="153" width="16" height="22"/>
+                                        <rect key="frame" x="182" y="124" width="50" height="51"/>
                                         <state key="normal" image="add-photo"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="Pop"/>
@@ -497,10 +532,10 @@ ingredients into/from cart </string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-LO-ADg">
-                                <rect key="frame" x="20" y="255" width="335" height="290"/>
+                                <rect key="frame" x="20" y="255" width="374" height="290"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vua-fU-UBV" userLabel="Name text field" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="onO-5R-fvP"/>
                                         </constraints>
@@ -535,7 +570,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSY-AF-URu" userLabel="Email text field" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="60" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2AY-pS-LgT"/>
                                         </constraints>
@@ -570,7 +605,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ug-Xg-eYc" userLabel="Password text field" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="120" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="i0d-fM-cOd"/>
                                         </constraints>
@@ -605,7 +640,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJF-p1-A0i" userLabel="Birthday text field" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="180" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="kbT-i0-bOj"/>
                                         </constraints>
@@ -640,7 +675,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-kq-Dy6" userLabel="Gender text field" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="240" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="OeW-ct-kxd"/>
                                         </constraints>
@@ -677,7 +712,7 @@ ingredients into/from cart </string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q2U-Qx-ZRM">
-                                <rect key="frame" x="81" y="617" width="213" height="30"/>
+                                <rect key="frame" x="100.5" y="812" width="213" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flQ-4S-7bZ">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
@@ -736,10 +771,10 @@ ingredients into/from cart </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCv-s5-NSA" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="0.0" y="20" width="375" height="151"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="151"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="night" translatesAutoresizingMaskIntoConstraints="NO" id="K3q-43-5Ch" userLabel="Jake Lin image view" customClass="AnimatableImageView" customModule="IBAnimatable">
-                                        <rect key="frame" x="152.5" y="20" width="70" height="70"/>
+                                        <rect key="frame" x="172" y="20" width="70" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="UWN-ZH-36o"/>
                                             <constraint firstAttribute="height" constant="70" id="zR9-Ud-SMX"/>
@@ -749,10 +784,10 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qm2-uh-IFr">
-                                        <rect key="frame" x="0.0" y="125" width="375" height="26"/>
+                                        <rect key="frame" x="0.0" y="125" width="414" height="26"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxX-DP-BnV" customClass="AnimatableButton" customModule="IBAnimatable">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="26"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="26"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <state key="normal" title="GENERAL">
                                                     <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -771,7 +806,7 @@ ingredients into/from cart </string>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18z-UE-ofx" customClass="AnimatableButton" customModule="IBAnimatable">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="26"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="26"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <state key="normal" title="ALERTS">
                                                     <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -804,10 +839,10 @@ ingredients into/from cart </string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mzx-wy-ZM1">
-                                <rect key="frame" x="16" y="171" width="343" height="290"/>
+                                <rect key="frame" x="20" y="195" width="374" height="290"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Jake Lin" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymI-hb-3L4" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="jdC-pL-omv"/>
                                         </constraints>
@@ -841,7 +876,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testinng1234@gmail.com" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GaP-9K-oZj" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="60" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="60" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="j3e-hD-k7C"/>
                                         </constraints>
@@ -875,7 +910,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="*********" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrR-ob-AqV" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="120" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="bEk-UZ-KZE"/>
                                         </constraints>
@@ -909,7 +944,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="April 1, 2018" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCH-Vh-Mxo" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="180" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="180" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="2Gt-rT-sp9"/>
                                         </constraints>
@@ -943,7 +978,7 @@ ingredients into/from cart </string>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Male" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUl-1I-fow" customClass="AnimatableTextField" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="240" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="240" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Gqp-55-zHn"/>
                                         </constraints>
@@ -979,7 +1014,7 @@ ingredients into/from cart </string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxV-cI-EQ7" userLabel="Exit button" customClass="AnimatableButton" customModule="IBAnimatable">
-                                <rect key="frame" x="160" y="592" width="55" height="55"/>
+                                <rect key="frame" x="179.5" y="738" width="55" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Ubw-tR-s2s"/>
                                     <constraint firstAttribute="width" constant="55" id="lhB-b7-nVd"/>
@@ -1040,11 +1075,278 @@ ingredients into/from cart </string>
             </objects>
             <point key="canvasLocation" x="-1001" y="135"/>
         </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="flx-Bi-NSK">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="okm-Js-POb" userLabel="Create Account View Controller" customClass="AnimatableViewController" customModule="IBAnimatable" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOU-GU-WzD"/>
+                        <viewControllerLayoutGuide type="bottom" id="V9T-Qd-2Lf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tLP-q1-zmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3m-CS-qQc" customClass="AnimatableView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8S-mA-bBL" userLabel="Back button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="8" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="FzH-Ek-kpo"/>
+                                            <constraint firstAttribute="width" constant="44" id="d1N-Zg-8Fl"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="8sM-VO-Jyr" kind="unwind" unwindAction="unwindToViewController:" id="uQy-Sv-X9K"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HK$289.9" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5Y-vN-U9A" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="20" y="106" width="335" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN4-ds-nDY" userLabel="Done button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="323" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="1Fo-jG-dIJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="1K7-jG-Ga3"/>
+                                        </constraints>
+                                        <state key="normal" image="done"/>
+                                        <connections>
+                                            <segue destination="kMo-gE-rke" kind="show" id="VEp-p4-ye5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DN4-ds-nDY" secondAttribute="trailing" constant="8" id="5bE-4i-MMJ"/>
+                                    <constraint firstAttribute="height" constant="255" id="Ft9-Sn-cPd"/>
+                                    <constraint firstItem="DN4-ds-nDY" firstAttribute="top" secondItem="Y8S-mA-bBL" secondAttribute="top" id="baG-ty-YMW"/>
+                                    <constraint firstItem="Y8S-mA-bBL" firstAttribute="leading" secondItem="R3m-CS-qQc" secondAttribute="leading" constant="8" id="d6l-9B-k2d"/>
+                                    <constraint firstItem="Y8S-mA-bBL" firstAttribute="top" secondItem="R3m-CS-qQc" secondAttribute="top" constant="60" id="lTX-bN-bnc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="52n-W4-iwe">
+                                <rect key="frame" x="20" y="255" width="335" height="290"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03w-p4-3mW" userLabel="Name text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Z4L-c3-Ef0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="username"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-TN-UjP" userLabel="Email text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="60" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5mM-0n-PnG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.65000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Credit Card Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lff-Ua-0II" userLabel="Password text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="120" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IcI-fK-UnD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expire Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-4z-tAn" userLabel="Birthday text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="180" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="J4v-I9-tUO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.75"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-gl-UgK" userLabel="Gender text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="240" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="tca-sB-9aq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                <real key="value" value="50"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="52n-W4-iwe" firstAttribute="top" secondItem="R3m-CS-qQc" secondAttribute="bottom" id="1q7-yh-7tB"/>
+                            <constraint firstItem="52n-W4-iwe" firstAttribute="leading" secondItem="tLP-q1-zmQ" secondAttribute="leading" constant="20" symbolic="YES" id="7TS-88-GMx"/>
+                            <constraint firstAttribute="trailing" secondItem="52n-W4-iwe" secondAttribute="trailing" constant="20" symbolic="YES" id="Tao-vp-BAl"/>
+                            <constraint firstItem="R3m-CS-qQc" firstAttribute="leading" secondItem="tLP-q1-zmQ" secondAttribute="leading" id="Ups-s5-oQ2"/>
+                            <constraint firstItem="52n-W4-iwe" firstAttribute="top" secondItem="R3m-CS-qQc" secondAttribute="bottom" id="YdW-Zi-mHI"/>
+                            <constraint firstAttribute="trailing" secondItem="R3m-CS-qQc" secondAttribute="trailing" id="Zvu-JS-qNI"/>
+                            <constraint firstItem="R3m-CS-qQc" firstAttribute="top" secondItem="tLP-q1-zmQ" secondAttribute="top" id="haH-in-m3N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="30y-RX-4Jf"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="lightStatusBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXw-Sm-D1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="8sM-VO-Jyr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-1490" y="1211"/>
+        </scene>
     </scenes>
     <resources>
         <image name="America2.jpg" width="250" height="375"/>
         <image name="Japan1.jpg" width="800" height="533"/>
         <image name="Logo" width="504" height="275"/>
+        <image name="add" width="22" height="22"/>
         <image name="add-photo" width="50" height="51"/>
         <image name="back" width="21" height="21"/>
         <image name="birthday" width="20" height="22"/>
@@ -1061,6 +1363,6 @@ ingredients into/from cart </string>
         <image name="username" width="20" height="19"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XbP-HA-UWc"/>
+        <segue reference="VEp-p4-ye5"/>
     </inferredMetricsTieBreakers>
 </document>

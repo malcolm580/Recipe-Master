@@ -39,6 +39,7 @@
 		5E8A3A8722645BB500FDAE23 /* IBAnimatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8A3A7C22645BA900FDAE23 /* IBAnimatable.framework */; };
 		5E8A3A8822645BB500FDAE23 /* IBAnimatable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8A3A7C22645BA900FDAE23 /* IBAnimatable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E8A3A8E22645C8E00FDAE23 /* LaunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A3A8D22645C8E00FDAE23 /* LaunViewController.swift */; };
+		5E8A3A9822649D3B00FDAE23 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8A3A9722649D3B00FDAE23 /* ShoppingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -226,6 +227,7 @@
 		0FECCF3B2258FC9A00E1026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8A3A7422645BA900FDAE23 /* IBAnimatable.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBAnimatable.xcodeproj; path = "IBAnimatable-master/IBAnimatable/IBAnimatable.xcodeproj"; sourceTree = "<group>"; };
 		5E8A3A8D22645C8E00FDAE23 /* LaunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunViewController.swift; sourceTree = "<group>"; };
+		5E8A3A9722649D3B00FDAE23 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 				0FB794A22263264A00D765B8 /* DetailTableViewCell.swift */,
 				0F06677E2263451000981BA4 /* BookmarkViewController.swift */,
 				5E8A3A8D22645C8E00FDAE23 /* LaunViewController.swift */,
+				5E8A3A9722649D3B00FDAE23 /* ShoppingViewController.swift */,
 			);
 			path = "Recipe Master";
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8A3A9822649D3B00FDAE23 /* ShoppingViewController.swift in Sources */,
 				0FBB73692259002B002C9D72 /* FileManager.swift in Sources */,
 				0FB3504E225CEC96001A9AD8 /* PageViewController.swift in Sources */,
 				5E8A3A8E22645C8E00FDAE23 /* LaunViewController.swift in Sources */,
